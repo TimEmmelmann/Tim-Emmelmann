@@ -1,0 +1,323 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    background-color: lightgray;
+    background-image: url(DSCF6105.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* nav */
+nav {
+    height: 100px;
+    width: 100%;
+    padding: auto;
+    border: none;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: +1;
+    background-color: white;
+    box-shadow: 0px 0px 50px black ;
+}
+
+nav div {
+    height: 100%;
+    width: 1000px;
+    padding: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.buttonnav1, .buttonnav2, .buttonnav3, .buttonnav4 {
+    height: 100%;
+    width: 220px;
+    margin: 0 10px 0 10px;
+    padding: auto;
+    border: none;
+    background-color:white;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    letter-spacing: 0.5em;
+}
+
+.buttonnav1 div, .buttonnav2 div, .buttonnav3 div, .buttonnav4 div {
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: 0.333s;
+}
+.buttonnav1:hover div {
+    width: 92px;
+    transform: translate(-5px, 0);
+}
+
+.buttonnav2:hover div {
+    width: 196.23px;
+    transform: translate(-5px, 0);
+}
+
+.buttonnav3:hover div {
+    width: 207.58px;
+    transform: translate(0px, 0);
+}
+
+.buttonnav4:hover div {
+    width: 154.97px;
+    transform: translate(-5px, 0);
+}
+
+/* nav end */
+
+
+/*main start*/
+main {
+    margin: 150px auto 0 auto ;
+    padding: 25px 75px 25px 75px;
+    max-width: 1300px;
+    min-width: 700px;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 25px;
+    background-color: rgba(231, 231, 231, 0.5);
+}
+
+article {
+    margin: 25px;
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+h3 {
+    text-align: left;
+    font-size: 30px;
+}
+
+p {
+    font-size: 25px;
+    text-align: justify;
+}
+
+/*Über Mich start*/
+.Übermich {
+    overflow: hidden;
+}
+
+.Übermich p {
+    width: 100%;
+    float: left;
+}
+
+.Übermich span {
+    width: 200px;
+    height: 200px;
+    margin: 0  0 25px 25px;
+    box-shadow: 0 10px 25px black ;
+    z-index: 1;
+    float: right;
+}
+
+.Übermich span img {
+    width: 200px;
+    transition: 1s ease;
+}
+.Übermich span img:hover {
+    transform: scale(1.5)
+    translate(-33.333px, 0)
+}
+
+/*Über Mich end*/
+
+/* progressbar start*/
+.progressbars {
+    width: 400px;
+    margin: 50px auto 50px auto;
+}
+
+.progressbar_label {
+    margin-bottom: 0;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.outer_progressbar {
+    height: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    background-color: lightgrey;
+    margin: 0;
+}
+
+.inner_progressbar1 {
+    height: 15px;
+    width: 95%;
+    background-color: red;
+    margin: 0 0 0 0;
+    border: none;
+    border-radius: 15px;
+}
+
+.inner_progressbar2 {
+    height: 15px;
+    width: 65%;
+    border: none;
+    border-radius: 15px;
+    background-color: red;
+    margin: 0 0 0 0;
+}
+
+.inner_progressbar3 {
+    height: 15px;
+    width: 35%;
+    border: none;
+    border-radius: 15px;
+    background-color: red;
+    margin: 0 0 0 0;
+}
+
+.inner_progressbar4 {
+    height: 15px;
+    width: 0%;
+    border: none;
+    border-radius: 15px;
+    background-color: red;
+    margin: 0 0 0 0;
+}
+/* progressbar end*/
+
+/*Erfahrung start*/
+/*certificates start*/
+.certificatesconatiner {
+    width: 100%;
+    display: flex;
+    background-color: lightgray;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.certificates1, .certificates2, .certificates3, .certificates4 {
+    flex:1;
+    margin: 1%;
+    min-width: 20%;
+    z-index: 0;
+    transition: 1s steps(10);
+}
+.certificates1:hover {
+    position: relative;
+    z-index: 10;
+}
+.certificates2:hover {
+    position: relative;
+    z-index: 10;
+}
+.certificates3:hover {
+    position: relative;
+    z-index: 10;
+}
+.certificates4:hover {
+    position: relative;
+    z-index: 10;
+}
+
+.certificates1 img , .certificates2 img , .certificates3 img , .certificates4 img {
+    width: 100%;
+    z-index: 0;
+    transition: 1s ease;
+}
+.certificates1:hover img, .certificates2:hover img, .certificates3:hover img, .certificates4:hover img{
+    transform: scale(3);
+    z-index: 10;
+}
+
+/*certificates end*/
+/*Erfahrung ende*/
+
+/*Kontakt start*/
+form {
+    width: 500px;
+    margin: 0 auto 0 auto ;
+    text-align: right;
+}
+
+.Kontakt {
+    margin-bottom: 50px;
+}
+
+.Kontakt h3 {
+    text-align: center;
+}
+
+input {
+    height: 25px;
+    width: 300px;
+    margin: 2.5px 0 2.5px 0;
+    border: 1px solid black;
+    border-radius: 0;
+    font-size: 20px;
+}
+
+textarea {
+    resize: vertical;
+    width: 500px;
+    height: auto;
+    min-height: 150px;
+    max-height: 5000px;
+    margin-top: 2.5px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 0;
+    font-size: 20px;
+}
+
+.Senden_container {
+    width: 100%;
+    text-align: center;
+}
+
+.Senden {
+    width: 120px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: auto;
+    margin: 0 auto 0 auto;
+    font-size: 20px;
+    letter-spacing: normal;
+    background-color: black;
+    color: white;
+    transition: 0.075s linear;
+}
+
+.Senden:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+/*Kontakt end*/
+/*main end*/
+
+
+/*footer start*/
+footer p {
+    margin: 25px 0 25px 0;
+    text-align: center;
+    font-size: 16px;
+} 
+/*footer end*/
